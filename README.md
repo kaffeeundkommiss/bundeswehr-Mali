@@ -4,10 +4,11 @@ Statische Seite zum Einsatz der Bundeswehr in Mali 2013–2023 (MINUSMA und EUTM
 
 Seite: https://kaffeeundkommiss.github.io/bundeswehr-Mali/
 
-- `index.html`: die Seite (wird aus `vorlage/index.vorlage.html` erzeugt, nicht direkt bearbeiten)
-- `vorlage/index.vorlage.html`: Text der Seite mit Platzhaltern `@@LOGO@@` und `@@KARTE@@`
+- `index.html`: Überblick (wird aus `vorlage/index.vorlage.html` erzeugt, nicht direkt bearbeiten)
+- `karte.html`: Karte und Standorte (wird aus `vorlage/karte.vorlage.html` erzeugt, nicht direkt bearbeiten)
+- `vorlage/*.vorlage.html`: Text der Seiten mit Platzhaltern `@@LOGO@@` und `@@KARTE@@`
 - `werkzeuge/umriss.py`: erzeugt Logo-Umriss und Karte aus Natural Earth (gemeinfrei)
-- `werkzeuge/seite_bauen.py`: setzt Logo und Karte ein, schreibt `index.html` und `favicon.svg`
+- `werkzeuge/seite_bauen.py`: setzt Logo und Karte ein, schreibt `index.html`, `karte.html` und `favicon.svg`
 - `seite.js`, `style.css`, `basis.css`, `tarn.svg`, `kk-tasse.svg`: aus dem Afghanistan-Repo übernommen (Design B, Bereich Sicherheitspolitik)
 - `QUELLEN.md`: Belegmatrix mit offenen Punkten
 

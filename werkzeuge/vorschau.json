@@ -1,0 +1,5 @@
+{ "basis": "https://kaffeeundkommiss.github.io/bundeswehr-Mali/", "ordner": "vorschau", "site_name": "Bundeswehr in Mali",
+  "seiten": [
+    { "datei": "index.html", "vorlage": "vorlage/index.vorlage.html", "bild": "start", "kicker": "Sicherheitspolitik · 2013–2023", "titel": "Bundeswehr in Mali" },
+    { "datei": "karte.html", "vorlage": "vorlage/karte.vorlage.html", "bild": "karte", "kicker": "Karte", "titel": "Mali im Überblick", "karte": "svg.kartesvg" }
+  ] }

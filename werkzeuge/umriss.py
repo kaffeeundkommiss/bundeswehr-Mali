@@ -68,6 +68,19 @@ orte = [
 for name, lon, lat, art, anker, dx, dy in orte:
     x, y = f(lon, lat)
     teile.append(f'<g class="ort {art}"><circle cx="{x:.1f}" cy="{y:.1f}" r="5"/><text x="{x+dx:.1f}" y="{y+dy:.1f}" text-anchor="{anker}">{name}</text></g>')
+def massstab(x, y, km, einh_je_km, fs):
+    """Maßstabsleiste (zwei Felder) mit Beschriftung, linke untere Ecke bei (x, y), Kartenmaß in SVG-Einheiten."""
+    L = km * einh_je_km; h = fs * .42; sw = fs * .07
+    r = lambda v: f'{v:.1f}'.rstrip('0').rstrip('.')
+    return (f'<g class="massstab" aria-hidden="true">'
+            f'<rect class="a" x="{r(x)}" y="{r(y-h)}" width="{r(L/2)}" height="{r(h)}" stroke-width="{r(sw) if sw>=.05 else f"{sw:.2f}"}"/>'
+            f'<rect class="b" x="{r(x+L/2)}" y="{r(y-h)}" width="{r(L/2)}" height="{r(h)}" stroke-width="{r(sw) if sw>=.05 else f"{sw:.2f}"}"/>'
+            f'<text x="{r(x)}" y="{r(y-h-fs*.35)}" font-size="{r(fs)}" style="stroke-width:{fs*.25:.2f}px">0</text>'
+            f'<text x="{r(x+L)}" y="{r(y-h-fs*.35)}" font-size="{r(fs)}" style="stroke-width:{fs*.25:.2f}px">{km} km</text></g>')
+
+# Maßstab: 1 Grad Breite = 111,32 km = sk Karteneinheiten (gilt bei 17° N, der Bezugsbreite)
+L500 = 500 * sk / 111.32
+teile.append(massstab(B - 36 - L500, H - 14, 500, sk / 111.32, 13))
 svg = (f'<svg class="kartesvg malikarte" viewBox="0 0 {B} {H:.0f}" role="img" aria-labelledby="karte-titel">'
        f'<title id="karte-titel">Karte Malis mit Nachbarstaaten und den Orten Bamako, Koulikoro und Gao</title>' + ''.join(teile) + '</svg>')
 open('werkzeuge/karte.svg.txt', 'w').write(svg + '\n')

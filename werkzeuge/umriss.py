@@ -1,10 +1,14 @@
 # Erzeugt den Umriss Malis (Logo, Favicon) und die Übersichtskarte aus Natural Earth (gemeinfrei).
-# Eingabe: ne_50m_admin_0_countries.geojson
+# Eingabe: ne_50m_admin_0_countries.geojson (Logo) und ne_10m_admin_0_countries.geojson (Karte,
+#   gleicher Maßstab 1:10 Mio. wie die Karten der Afghanistan- und Kosovo-Seite)
 #   https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson
-# Aufruf: python3 werkzeuge/umriss.py PFAD/zur/datei.geojson
+#   https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_countries.geojson
+# Aufruf: python3 werkzeuge/umriss.py PFAD/ne_50m.geojson PFAD/ne_10m.geojson
+# Die Karte nutzt die Klassen der Afghanistan-/Kosovo-Karten (kartesvg, nachbar, landname, ort de/haupt).
 import json, math, sys
 d = json.load(open(sys.argv[1]))
 geo = {f['properties']['ADMIN']: f['geometry'] for f in d['features']}
+geo10 = {f['properties']['ADMIN']: f['geometry'] for f in json.load(open(sys.argv[2]))['features']}
 
 def rings(g):
     if g['type'] == 'Polygon': return [g['coordinates'][0]]
@@ -46,23 +50,25 @@ W, E, S_, N = -13.5, 5.5, 9.0, 26.0
 B = 600; sk = B / ((E - W) * K)
 H = (N - S_) * sk
 f = lambda lon, lat: ((lon - W) * K * sk, (N - lat) * sk)
-nachbarn = ['Algeria', 'Niger', 'Burkina Faso', 'Ivory Coast', 'Guinea', 'Senegal', 'Mauritania']
+nachbarn = [('Algeria', 'Algerien'), ('Niger', 'Niger'), ('Burkina Faso', 'Burkina Faso'), ('Ivory Coast', 'Elfenbeinküste'),
+            ('Guinea', 'Guinea'), ('Senegal', 'Senegal'), ('Mauritania', 'Mauretanien')]
 teile = []
-for n in nachbarn:
-    teile.append(f'<path class="land" d="{pfad(geo[n], f, 0.6)}"/>')
-teile.append(f'<path class="mali" d="{pfad(geo["Mali"], f, 0.4)}"/>')
-orte = [  # Lage ungefähr (Grad, gerundet)
-    ('Bamako', -8.0, 12.65, 'hauptstadt', 'end', -8, 4),
-    ('Koulikoro', -7.56, 12.86, 'eutm', 'start', 8, -6),
-    ('Gao', -0.04, 16.27, 'minusma', 'start', 8, 4),
+for n, de in nachbarn:
+    teile.append(f'<path class="nachbar" d="{pfad(geo10[n], f, 0.6)}"><title>{de}</title></path>')
+teile.append(f'<path class="mali" d="{pfad(geo10["Mali"], f, 0.4)}"><title>Mali</title></path>')
+for name, lon, lat in [('Algerien', 1.5, 24.5), ('Mauretanien', -10.5, 20.5), ('Niger', 4.2, 17.8), ('Burkina Faso', -1.5, 12.0), ('Guinea', -11.0, 10.4), ('Senegal', -12.6, 14.6), ('Elfenbeinküste', -6.2, 9.6), ('Mali', -4.0, 18.0)]:
+    x, y = f(lon, lat)
+    teile.append(f'<text class="{"landname kos" if name=="Mali" else "landname"}" x="{x:.1f}" y="{y:.1f}">{name}</text>')
+# Ortssymbole wie Afghanistan/Kosovo: haupt = Hauptstadt, de = Standort der Bundeswehr. Lage ungefähr (Grad, gerundet)
+orte = [
+    ('Bamako', -8.0, 12.65, 'haupt', 'end', -10, 4),
+    ('Koulikoro', -7.56, 12.86, 'de', 'start', 10, -6),
+    ('Gao', -0.04, 16.27, 'de', 'start', 10, 4),
 ]
 for name, lon, lat, art, anker, dx, dy in orte:
     x, y = f(lon, lat)
     teile.append(f'<g class="ort {art}"><circle cx="{x:.1f}" cy="{y:.1f}" r="5"/><text x="{x+dx:.1f}" y="{y+dy:.1f}" text-anchor="{anker}">{name}</text></g>')
-for name, lon, lat in [('ALGERIEN', 1.5, 24.5), ('MAURETANIEN', -10.5, 20.5), ('NIGER', 4.2, 17.8), ('BURKINA FASO', -1.5, 12.0), ('GUINEA', -11.0, 10.4), ('SENEGAL', -12.6, 14.6), ('ELFENBEINKÜSTE', -6.2, 9.6), ('MALI', -4.0, 18.0)]:
-    x, y = f(lon, lat)
-    teile.append(f'<text class="{"name-mali" if name=="MALI" else "name"}" x="{x:.1f}" y="{y:.1f}" text-anchor="middle">{name}</text>')
-svg = (f'<svg class="mali-karte" viewBox="0 0 {B} {H:.0f}" role="img" aria-labelledby="karte-titel">'
+svg = (f'<svg class="kartesvg malikarte" viewBox="0 0 {B} {H:.0f}" role="img" aria-labelledby="karte-titel">'
        f'<title id="karte-titel">Karte Malis mit Nachbarstaaten und den Orten Bamako, Koulikoro und Gao</title>' + ''.join(teile) + '</svg>')
 open('werkzeuge/karte.svg.txt', 'w').write(svg + '\n')
 print(len(logo), len(svg))

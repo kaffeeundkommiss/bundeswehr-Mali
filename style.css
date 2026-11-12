@@ -321,19 +321,14 @@ td.einzeln .nat img{opacity:.75;border-style:dashed}
 .mandate li>div::after{content:"";display:block;clear:both}
 
 /* Mali: Übersichtskarte */
-.mali-kartenrahmen{margin:8px 0 4px}
-.mali-karte{display:block;width:100%;height:auto;max-width:640px;background:var(--paper);border:1px solid var(--line)}
-.mali-karte .land{fill:var(--bg);stroke:var(--line);stroke-width:1}
-.mali-karte .mali{fill:#A9B38A;stroke:#4C5233;stroke-width:1.2}
-.mali-karte .name{font:600 12px var(--titel);letter-spacing:.08em;fill:var(--mute)}
-.mali-karte .name-mali{font:700 20px var(--titel);letter-spacing:.2em;fill:#3A4027}
-.mali-karte .ort text{font:600 14px var(--body);fill:#1E2114;paint-order:stroke;stroke:#F3EFE4;stroke-width:3px}
-.mali-karte .ort circle{stroke:#fff;stroke-width:1.5}
-.mali-karte .hauptstadt circle{fill:#1E2114}
-.mali-karte .eutm circle{fill:#2E4A6B}
-.mali-karte .minusma circle{fill:#4B92DB}
-.kartenlegende{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px}
-.kartenlegende span{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.malikarte{max-width:640px;margin:0 auto}
+.malikarte .nachbar{fill:var(--k-land);stroke:var(--k-landlinie);stroke-width:1.2;stroke-linejoin:round}
+.malikarte .mali{fill:var(--k-afg);stroke:var(--akzent);stroke-width:2;stroke-linejoin:round}
+.malikarte text{stroke-width:3px}
+.malikarte .landname{font-size:13px}
+.malikarte .landname.kos{font-size:19px;font-weight:700;fill:var(--k-text)}
+.malikarte .ort circle,.malikarte .ort.haupt circle{r:5px;stroke-width:2}
+.malikarte .ort text{font-size:15px}
 .zwei-einsaetze{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 28px}
 .zwei-einsaetze h3{margin:6px 0 6px;font:700 20px/1.1 var(--titel);text-transform:uppercase;letter-spacing:.05em}
 .zwei-einsaetze p{margin:0 0 8px}

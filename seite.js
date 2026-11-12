@@ -263,7 +263,7 @@
   function karten() {
     Array.prototype.forEach.call(document.querySelectorAll('.kartenrahmen'), function (fig) {
       var svg = fig.querySelector('svg.kartesvg');
-      if (!svg) return;
+      if (!svg || !svg.querySelector('.prov, .flg')) return;
       var info = el('p', { class: 'karten-info', 'aria-live': 'polite' }, 'Provinz antippen oder mit der Maus darauf zeigen.');
       var box = fig.querySelector('.kartenbox') || svg;
       box.parentNode.insertBefore(info, box.nextSibling);

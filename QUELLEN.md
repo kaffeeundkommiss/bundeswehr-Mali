@@ -33,7 +33,7 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 | 1.100 vor Abzug | [2], [20] | [2] „Vor Beginn der Rückverlegung waren 1.100 Bundeswehrangehörige in Camp Castor stationiert.“ | belegt |
 | Camp Castor übergeben 12.12.2023 | [2], [3] | [2] „am 12. Dezember 2023 an den Gouverneur der Provinz Gao übergeben“ | nur amtlich |
 | Landung Wunstorf 15.12.2023 | [4], [22], [23], [1] | [4] „am Freitag, 15. Dezember 2023“ | belegt |
-| Zahl Rückkehrer 142 / 300 / 304 | [4] / [23] / [22] | widersprüchlich | Widerspruch offen ausgewiesen |
+| Zahl Rückkehrer 142 (Landung Wunstorf) | [4]; [31] | [4] „Die letzten 142 Einsatzsoldatinnen und -soldaten der Bundeswehr sind zum Fliegerhorst in Wunstorf zurückgekehrt.“; [31] „Über die Heckrampen 142 Soldatinnen und Soldaten aus den Maschinen“ | belegt (zwei amtliche Stellen); 300 [23] „wurden die 300 Personen am Nachmittag im niedersächsischen Wunstorf erwartet“ (Vorabangabe, Ministeriumssprecher); 304 [22] Vorabmeldung dpa, Bezug unklar, 19.11.2026 nicht erneut gelesen |
 | rund 20.000 deutsche Soldaten bei MINUSMA | [2], [3], [4], [22] | [22] „nach Bundeswehr-Angaben insgesamt rund 20.000“ | nur amtlich |
 | 3 deutsche Tote im Einsatz | [2], [8], [23] | [8] „fünf niederländische und drei deutsche Soldaten“ | nur amtlich |
 | 303 MINUSMA-Angehörige durch feindliche Handlungen getötet (bis 06/2023) | [13] | „at least 303 Mission personnel had been killed in hostile acts“ | eine Quelle |
@@ -49,4 +49,4 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 - Mandatsobergrenzen im Verlauf (zwischen 2013 und 2022) nicht doppelt belegt, daher nicht dargestellt.
 - Dritter deutscher Todesfall: Umstände in keiner gelesenen Quelle beschrieben.
 - Kosten des Einsatzes: nur in einer Werkzeug-Zusammenfassung der Bundestagsseite gesehen, nicht wörtlich geprüft, daher nicht verwendet.
-- Abweichende Rückkehrerzahlen am 15.12.2023 (142 / 300 / 304) nicht aufgelöst.
+- Rückkehrerzahlen 15.12.2023 geklärt am 19.11.2026: 142 bei der Landung ([4], [31]); 300 und 304 Vorabangaben in Agenturmeldungen. Bezug von 304 (dpa) nicht geprüft.

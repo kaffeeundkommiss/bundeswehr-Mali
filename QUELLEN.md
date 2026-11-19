@@ -1,6 +1,6 @@
 # Belegmatrix Bundeswehr in Mali
 
-Stand: 11.11.2026. Alle Quellen am 11.11.2026 abgerufen (Nummern wie in `index.html`).
+Stand: 19.11.2026. Quellen [1] bis [31] am 11.11.2026, [32] bis [36] am 19.11.2026 abgerufen (Nummern wie in `index.html`).
 Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsressort [1] [2] [3] [5] [6] [7] [8] [9] [31]; Bundesregierung [4] [26]; UN [11] [12] [13]; EU [14] [15] [16]; Agence Europe [17] [18]; ESUT [19] [20]; Wikipedia [28] [29]. [22] dpa und [23] epd berufen sich bei Gesamtzahl und Toten auf Bundeswehr bzw. BMVg.
 
 | Behauptung | Quellen | Fundstelle (Originalpassage, gekürzt) | Bewertung |
@@ -13,7 +13,7 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 | EUTM Start 18.02.2013 | [14], [18], [15], [6] | [14] Art. 2 „EUTM Mali shall be launched on 18 February 2013.“ | belegt |
 | EUTM kein Kampfeinsatz, Koulikoro | [15], [18], [6] | [15] „not be involved in combat operations“, „Koulikoro Training Camp“ | belegt |
 | EUTM-Obergrenzen 180 / bis 600 / zuletzt 300 | [6] | „Obergrenze von 180“, „bis zu 600“, „300 Soldatinnen und Soldaten“ | eine Quelle |
-| Bundestag 28.02.2013 und 27.06.2013 | [5] | „mandatierte am 28. Februar 2013 erstmals zwei Einsätze“; „billigte der Bundestag am 27. Juni 2013“ | eine Quelle (bundestag.de nicht abrufbar) |
+| Bundestag 28.02.2013 und 27.06.2013 | [5], [32]; 28.02. auch [33] | [5] „mandatierte am 28. Februar 2013 erstmals zwei Einsätze“; [32] „billigte der Deutsche Bundestag erstmals am 28. Februar 2013“, „nach Zustimmung des Deutschen Bundestages vom 27. Juni 2013“; [33] Plenarsitzung 17/225 vom 28.02.2013, EUTM-Abstimmung 567 Stimmen, 496 ja, 67 nein, 4 Enthaltungen | belegt (Nachtrag 19.11.2026) |
 | Resolution 2100, 25.04.2013 | [10], [12] | [10] „Resolution 2100 des UN-Sicherheitsrats vom 25. April 2013“ | belegt |
 | Algier 15.05./20.06.2015 | [29]; Monate [5] | [29] „signed on May 15 and June 20, 2015“ | Tage eine Quelle |
 | Erweiterung 28.01.2016 | [1] | „Am 28. Januar 2016 beschloss der Deutsche Bundestag …“ | eine Quelle |
@@ -36,6 +36,8 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 | Zahl Rückkehrer 142 (Landung Wunstorf) | [4]; [31] | [4] „Die letzten 142 Einsatzsoldatinnen und -soldaten der Bundeswehr sind zum Fliegerhorst in Wunstorf zurückgekehrt.“; [31] „Über die Heckrampen 142 Soldatinnen und Soldaten aus den Maschinen“ | belegt (zwei amtliche Stellen); 300 [23] „wurden die 300 Personen am Nachmittag im niedersächsischen Wunstorf erwartet“ (Vorabangabe, Ministeriumssprecher); 304 [22] Vorabmeldung dpa, Bezug unklar, 19.11.2026 nicht erneut gelesen |
 | rund 20.000 deutsche Soldaten bei MINUSMA | [2], [3], [4], [22] | [22] „nach Bundeswehr-Angaben insgesamt rund 20.000“ | nur amtlich |
 | 3 deutsche Tote im Einsatz | [2], [8], [23] | [8] „fünf niederländische und drei deutsche Soldaten“ | nur amtlich |
+| Dritter Todesfall: Juni 2022, Camp Castor, natürlicher Tod | [34], [35] | [34] „Ein dritter Soldat der Bundeswehr starb im Jahr 2022 eines natürlichen Todes.“; [35] „27. Juni 2022 / MINUSMA / Camp Castor, Mali / mutmaßlich natürliche Ursache“ | amtlich, von einer Einzelliste bestätigt (Nachtrag 19.11.2026) |
+| Todesfall-Tabelle: MINUSMA 5 | [36] | Tabelle „Mali / MINUSMA / 5“, Stand März 2026; Gesamtzahl schließt Todesfälle „infolge dessen“ ein | Widerspruch zu 3, Ursache ungeklärt |
 | 303 MINUSMA-Angehörige durch feindliche Handlungen getötet (bis 06/2023) | [13] | „at least 303 Mission personnel had been killed in hostile acts“ | eine Quelle |
 | MINUSMA endet 31.12.2023 | [12], [11] | [12] „MINUSMA closed on 31 December 2023“ | belegt |
 | EUTM endet 18.05.2024 | [16], [17] | [17] „not to extend the mandate … beyond 18 May 2024“ | belegt |
@@ -45,8 +47,9 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 
 ## Offene Punkte
 
-- Bundestagsbeschlüsse 2013 nur aus dem Bundeswehr-Informationsblatt [5]; bundestag.de-Archivseiten zu 2013 waren nicht abrufbar.
+- Erledigt 19.11.2026: Bundestagsbeschlüsse 2013 jetzt zusätzlich durch [32] und [33] belegt.
 - Mandatsobergrenzen im Verlauf (zwischen 2013 und 2022) nicht doppelt belegt, daher nicht dargestellt.
-- Dritter deutscher Todesfall: Umstände in keiner gelesenen Quelle beschrieben.
+- Erledigt 19.11.2026: dritter Todesfall (27.06.2022, Camp Castor, natürliche Ursache) durch [34] und [35].
+- Neu 19.11.2026: Todesfall-Tabelle der Bundeswehr [36] nennt für MINUSMA 5 statt 3 Todesfälle; nicht aufgeschlüsselt, Ursache der Abweichung offen.
 - Kosten des Einsatzes: nur in einer Werkzeug-Zusammenfassung der Bundestagsseite gesehen, nicht wörtlich geprüft, daher nicht verwendet.
 - Rückkehrerzahlen 15.12.2023 geklärt am 19.11.2026: 142 bei der Landung ([4], [31]); 300 und 304 Vorabangaben in Agenturmeldungen. Bezug von 304 (dpa) nicht geprüft.

@@ -45,6 +45,14 @@ Quellengruppen, die nicht als voneinander unabhängig gelten: Verteidigungsresso
 | Positionen Koalition / Union zum Abzugstermin | [20], [25] | [20] „CDU/CSU-Fraktion für einen Abzug bis Ende 2023“ | belegt |
 | Uzulis: Einsatz zu lang | [27] | „self-serving and futile“ | Einschätzung, eine Quelle |
 
+## Begriffserklärungen (ergänzt 22.11.2026)
+
+Abgerufen am 22.11.2026. Die Erklärungen stehen beim ersten Vorkommen des Begriffs im Fließtext. Wikipedia und Constellatio sind nur ergänzend genutzt.
+
+| Begriff (Erklärung auf der Seite) | Quellen | Passage (wörtlich, gekürzt) | Bewertung |
+|---|---|---|---|
+| Blauhelme: Soldaten der UN-Friedenstruppen, die blaue Helme tragen | [37]; [38] | [37] „Sie werden „Blauhelm-Soldaten“ genannt, weil sie blaue Helme tragen.“; [38] „aufgrund der UN-blauen Kopfbedeckungen der eingesetzten Kräfte umgangssprachlich auch Blauhelmsoldaten“ | belegt |
+
 ## Offene Punkte
 
 - Erledigt 19.11.2026: Bundestagsbeschlüsse 2013 jetzt zusätzlich durch [32] und [33] belegt.
